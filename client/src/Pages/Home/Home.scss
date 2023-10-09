@@ -1,0 +1,62 @@
+.Home {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	.inputAndList {
+		width: 50%;
+		background-color: #005F73;
+		height: 420px;
+		border-radius: 4px;
+		padding: 14px 8px 0px 8px;
+		box-shadow: 0 0 4px 0 #005F73;
+		.breadCrumb {
+			display: flex;
+			align-items: center;
+			height: 32px;
+			cursor: pointer;
+			span {
+				color: #EE9B00;
+			}
+		}
+		.scrollList {
+			height: 362px;
+			overflow: auto;
+			margin-top: 10px;
+			padding: 0 16px;
+			border: 1px solid #8c8c8c59;
+			background-color: #0A9396;
+			border-radius: 4px;
+			&::-webkit-scrollbar {
+				width: 0px;
+				background: transparent;
+			}
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			.scrollListItem {
+				cursor: pointer;
+				p {
+					color : #282c34;
+					user-select: none;
+				}
+				.icon {
+					color: #EE9B00;
+					background-color: #282c34;
+					margin-top: 1px;
+					padding: 5px;
+					border-radius: 50%;
+				}
+				.ant-list-item-meta-avatar{
+					margin-right: 8px!important;
+				}
+			}
+			.ant-empty-image {
+				svg {
+					filter: brightness(0) saturate(100%) invert(13%) sepia(12%) saturate(886%) hue-rotate(182deg) brightness(98%) contrast(89%);
+				}
+			}
+			.ant-empty-description {
+				color: #282c34;
+			}
+		}
+	}
+}
